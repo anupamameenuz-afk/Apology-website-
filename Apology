@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An Apology</title>
+    <style>
+        /* --- Font Imports from Google Fonts --- */
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Dancing+Script:wght@700&display=swap');
+
+        /* --- Base Styling & Color Palette --- */
+        body {
+            background-color: #fdf6e9; /* Soft Beige */
+            font-family: 'Playfair Display', serif;
+            color: #5c5c5c;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        /* --- Main Container & Layout --- */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 10vh 40px 20vh; /* Vertical padding for scroll room */
+            text-align: center;
+        }
+
+        /* --- Typography Styling --- */
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3.5rem;
+            color: #d8a7b1; /* Pastel Pink */
+            margin-bottom: 5rem;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 2.2;
+            color: #6a7a8c; /* Gentle Blue-Gray */
+            text-align: left;
+            margin: 2rem 0;
+        }
+
+        .signature {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5rem;
+            color: #d8a7b1; /* Pastel Pink */
+            margin-top: 6rem;
+            text-align: right;
+        }
+        
+        /* --- Subtle Animation on Scroll --- */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1 class="fade-in">My Dearest Tara,</h1>
+
+        <p class="fade-in">
+            I’m writing this because words sometimes fail me in the moment, and I need you to know what’s truly in my heart.
+        </p>
+
+        <p class="fade-in">
+            I know I can be too much sometimes. There are moments when my own intensity gets the better of me, and even when my only intention is to love you and make you happy, I make mistakes. I see now that my actions, born from a place of pure intention, can still cause you pain. And for that, I am so incredibly sorry. Hurting you is the last thing I ever want to do.
+        </p>
+
+        <p class="fade-in">
+            You are not just someone I met online. That's how our story began, but it’s not what you are to me now. You are the reason I find myself smiling for no reason. You are the warmth that makes my days feel lighter, the quiet joy that has made me believe in happiness again. Before you, I’m not sure I truly understood it.
+        </p>
+        
+        <p class="fade-in">
+            I would do anything to keep you happy. If that means giving you space, I will step back. If it means being quieter, I will learn. Your peace is more important than my presence.
+        </p>
+
+        <p class="fade-in">
+            I know you deserve someone better, someone calmer, someone more perfect. In my eyes, you are perfection, and you deserve someone who can mirror that. I often feel like I am not worthy of the incredible love you give.
+        </p>
+        
+        <p class="fade-in">
+            But I love you so deeply that your happiness has become the most important thing in my world. More important than having you by my side.
+        </p>
+
+        <p class="fade-in">
+            So, I will love you quietly. I will love you patiently, from whatever distance brings you peace. Seeing you happy is enough for me. That will always be enough.
+        </p>
+
+        <p class="signature fade-in">
+            With all my love,<br>
+             Your Pagal 🎀
+        </p>
+
+    </div>
+
+    <script>
+        // --- JavaScript for Subtle Fade-In Animation on Scroll ---
+        document.addEventListener("DOMContentLoaded", function() {
+            const fadeInElements = document.querySelectorAll('.fade-in');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1 // Trigger when 10% of the element is visible
+            });
+
+            fadeInElements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An Apology</title>
+    <style>
+        /* --- Font Imports from Google Fonts --- */
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Dancing+Script:wght@700&display=swap');
+
+        /* --- Base Styling & Color Palette --- */
+        body {
+            background-color: #fdf6e9; /* Soft Beige */
+            font-family: 'Playfair Display', serif;
+            color: #5c5c5c;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        /* --- Main Container & Layout --- */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 10vh 40px 20vh; /* Vertical padding for scroll room */
+            text-align: center;
+        }
+
+        /* --- Typography Styling --- */
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3.5rem;
+            color: #d8a7b1; /* Pastel Pink */
+            margin-bottom: 5rem;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 2.2;
+            color: #6a7a8c; /* Gentle Blue-Gray */
+            text-align: left;
+            margin: 2rem 0;
+        }
+
+        .signature {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5rem;
+            color: #d8a7b1; /* Pastel Pink */
+            margin-top: 6rem;
+            text-align: right;
+        }
+        
+        /* --- Subtle Animation on Scroll --- */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1 class="fade-in">My Dearest Tara,</h1>
+
+        <p class="fade-in">
+            I’m writing this because words sometimes fail me in the moment, and I need you to know what’s truly in my heart.
+        </p>
+
+        <p class="fade-in">
+            I know I can be too much sometimes. There are moments when my own intensity gets the better of me, and even when my only intention is to love you and make you happy, I make mistakes. I see now that my actions, born from a place of pure intention, can still cause you pain. And for that, I am so incredibly sorry. Hurting you is the last thing I ever want to do.
+        </p>
+
+        <p class="fade-in">
+            You are not just someone I met online. That's how our story began, but it’s not what you are to me now. You are the reason I find myself smiling for no reason. You are the warmth that makes my days feel lighter, the quiet joy that has made me believe in happiness again. Before you, I’m not sure I truly understood it.
+        </p>
+        
+        <p class="fade-in">
+            I would do anything to keep you happy. If that means giving you space, I will step back. If it means being quieter, I will learn. Your peace is more important than my presence.
+        </p>
+
+        <p class="fade-in">
+            I know you deserve someone better, someone calmer, someone more perfect. In my eyes, you are perfection, and you deserve someone who can mirror that. I often feel like I am not worthy of the incredible love you give.
+        </p>
+        
+        <p class="fade-in">
+            But I love you so deeply that your happiness has become the most important thing in my world. More important than having you by my side.
+        </p>
+
+        <p class="fade-in">
+            So, I will love you quietly. I will love you patiently, from whatever distance brings you peace. Seeing you happy is enough for me. That will always be enough.
+        </p>
+
+        <p class="signature fade-in">
+            With all my love,<br>
+             Your Pagal 🎀
+        </p>
+
+    </div>
+
+    <script>
+        // --- JavaScript for Subtle Fade-In Animation on Scroll ---
+        document.addEventListener("DOMContentLoaded", function() {
+            const fadeInElements = document.querySelectorAll('.fade-in');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1 // Trigger when 10% of the element is visible
+            });
+
+            fadeInElements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+
+</body>
+</html>
